@@ -5,8 +5,7 @@ internal class Program
     private static void Main(string[] args)
     {
         DataService ds = new DataService();
-        int x = 1054;
-        int y = 375;
+        int x,y;
 
         Console.Title = "Спринт #2 | Выполнила: Малькова М. С. | ИИПб-25-1";
 
@@ -26,10 +25,12 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine("X = " + x); 
-        Console.WriteLine("Y = " + y);
-        Console.WriteLine("***************************************************************************");
 
+        Console.WriteLine("Введите значение X:");
+        x = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Введите значение Y:");
+        y = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
