@@ -1,19 +1,19 @@
-﻿using Tyuiu.MalkovaMS.Sprint2.Task5.V8.Lib;
+﻿using Tyuiu.MalkovaMS.Sprint2.Task6.V12.Lib;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
         DataService ds = new DataService();
-        int m, n;
+        int g, m, n;
         Console.Title = "Спринт #2 | Выполнила: Малькова М. С. | ИИПб-25-1";
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #2                                                               *");
-        Console.WriteLine("* Тема: Оператор switch                                                   *");
+        Console.WriteLine("* Тема: Получение результата из switch                                    *");
 
-        Console.WriteLine("* Задание #5                                                              *");
-        Console.WriteLine("* Вариант #8                                                              *");
+        Console.WriteLine("* Задание #6                                                              *");
+        Console.WriteLine("* Вариант #12                                                             *");
         Console.WriteLine("* Выполнила: Малькова Мария Сергеевна | ИИПб-25-1                         *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -23,6 +23,9 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
+
+        Console.WriteLine("Введите год (високосный):");
+        g = Convert.ToInt32(Console.ReadLine());
 
         Console.WriteLine("Введите номер месяца:");
         m = Convert.ToInt32(Console.ReadLine());
@@ -34,7 +37,7 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        string resultat = ds.FindDateOfPreviousDay(m, n);
+        string resultat = ds.FindDateOfPreviousDay(g, m, n);
         Console.WriteLine("Дата предыдущего дня: " + resultat);
 
         Console.ReadKey();
