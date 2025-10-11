@@ -53,7 +53,9 @@ namespace Tyuiu.MalkovaMS.Sprint2.Task5.V8.Lib
 
                     default:
                         if ((n - 1) > 0 & (n - 1) < 10)
-                            day = "0" + Convert.ToString(n-1);
+                            day = "0" + Convert.ToString(n - 1);
+                        else
+                            day = Convert.ToString(n - 1);
                         if (m > 0 & m < 10)
                             month = "0" + month;
                         res = day + "." + month;
